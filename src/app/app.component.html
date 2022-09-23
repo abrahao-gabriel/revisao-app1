@@ -1,0 +1,23 @@
+<h2 class="h1">Selecione uma opção:</h2>
+
+<input
+  class="form-check-input mt-1"
+  type="radio"
+  [(ngModel)]="option"
+  [value]="1"
+/>
+Juros Simples
+<br />
+<input
+  class="form-check-input mt-1"
+  type="radio"
+  [(ngModel)]="option"
+  [value]="2"
+/>
+Juros Compostos
+
+<app-juros-simples *ngIf="option == '1'" c="1200" i="2" t="15">
+</app-juros-simples>
+
+<app-juros-compostos *ngIf="option == '2'" c="1400" i="7" t="2">
+</app-juros-compostos>

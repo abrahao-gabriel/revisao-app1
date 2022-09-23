@@ -1,0 +1,13 @@
+<body>
+  <h2>Juros Compostos A.M</h2>
+  <div>
+    Valor Inicial:<input class="form-control" [(ngModel)]="c" />
+    <br />
+    Taxa de Juros(%)<input class="form-control" [(ngModel)]="i" />
+    <br />
+    Tempo(Meses): <input class="form-control" [(ngModel)]="t" />
+    <br />
+    Juros: {{ getJuros() }}
+  </div>
+  <hr />
+</body>
